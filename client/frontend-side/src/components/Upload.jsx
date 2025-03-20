@@ -18,7 +18,7 @@ const Upload = () => {
     formData.append('image_type', imageType);
 
     try {
-      const response = await fetch('API_URL', {
+      const response = await fetch('http://localhost:8000/api/upload/', {
         method: 'POST',
         body: formData,
       });
